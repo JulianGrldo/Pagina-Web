@@ -142,7 +142,7 @@ POSITION: relative;
     width: 200px;
 }
 .coffee-img{
-    position: relative;
+    position: absolute;
     top: 0;
     right: 0;
 
@@ -257,13 +257,33 @@ p {
 
 
 .blog-1 img {
-    width: 250opx;
+    width: 250px;
     border-radius: 15px;
     margin-bottom: 15px;
 }
 
 
 .blog-1 h3{
-    font-size: 20px;
+    font-size: 25px;
     color: #323337;
+}
+.footer {
+    background-color: #000000;
+    padding: 100px 0;
+    
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+.link h3 {
+    font-size: 18px;
+    color: #F9FAFC;
+    margin-bottom: 15px;
+}
+.link a {
+    font-size: 16px;
+    color: #c5c5c5;
+    display: block;
+    margin-bottom: 15px;
 }

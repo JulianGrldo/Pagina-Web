@@ -85,7 +85,7 @@ body {
 .header-content p{
     font-size: 16px;
     color: #c5c5c5;
-    padding: 250px;
+    padding:  0 250px;
     margin-bottom: 25px;
 }
 
@@ -102,3 +102,97 @@ body {
     color: #ce967b;
     transition: 0.3s ease-in-out;
 }
+.coffee {
+padding: 180px;
+background-color: #E1E2E6;
+POSITION: relative;
+}
+
+.coffee-content {
+    text-align: center;
+}
+
+.coffee-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+
+.txt-p {
+    font-size: 16px;
+    color: #414247;
+    padding: 0 250px;
+    margin-bottom: 35px;
+}
+
+.coffee-group {
+    display: flex;
+    justify-content: espace-between;
+    margin-bottom: 50px;
+}
+
+.coffee-1{
+    padding: 0 25px;
+}
+
+.coffee-1 img {
+    width: 200px;
+}
+.coffee-img{
+    position: relative;
+    top: 0;
+    right: 0;
+
+}
+.coffee-1 h3 {
+    font-size: 20px;
+    color: #323337;
+    margin-bottom: 15px;
+}
+
+.services {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)),
+        url(images/bg2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    padding: 100px 0;  
+}
+
+.services-content {
+    text-align: center;
+}
+.services-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.services-content p {
+    font-size: 16px;
+    color: #c5c5c5;
+    padding: 0 100px;
+    margin-bottom: 50px;
+}
+.services-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.services-1 {
+    padding: 0 100px;
+}
+
+.services-1 img {
+    width: 25px;
+    margin-bottom: 15px;
+}
+

@@ -70,3 +70,35 @@ body {
     cursor: pointer;
     display: none;
 }
+
+.header-content {
+    text-align: center;
+}
+.header-content h1{
+    font-size: 75px;
+    line-height: 88 px;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.header-content p{
+    font-size: 16px;
+    color: #c5c5c5;
+    padding: 250px;
+    margin-bottom: 25px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #ce967b;
+    color: #F9FAFC;
+    text-transform: uppercase;
+}
+
+.btn-1:hover {
+    background-color: #ce967b;
+    color: #ce967b;
+    transition: 0.3s ease-in-out;
+}

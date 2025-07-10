@@ -130,29 +130,52 @@ POSITION: relative;
 
 .coffee-group {
     display: flex;
-    justify-content: espace-between;
+    justify-content: space-between; /* Corregimos el error y distribuimos el espacio */
+    flex-wrap: wrap; /* Permitimos que los elementos pasen a la siguiente línea si no caben */
+    gap: 20px; /* Añadimos un espacio consistente entre los elementos */
     margin-bottom: 50px;
 }
 
-.coffee-1{
-    padding: 0 25px;
+.coffee-1 {
+    flex: 1 1 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    /* AÑADE ESTA LÍNEA 👇 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* AÑADE ESTA NUEVA REGLA COMPLETA 👇 */
+.coffee-1:hover {
+    transform: translateY(-10px); /* Esto levanta la tarjeta 10px */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Esto hace la sombra más pronunciada */
+}
+
+/* Ajustamos la imagen para que se adapte mejor */
 .coffee-1 img {
-    width: 200px;
+    width: 150px; /* Reducimos el ancho de la imagen */
+    height: 150px; /* Fijamos una altura igual para que sea un cuadrado perfecto */
+    object-fit: cover; /* Esto evita que la imagen se deforme al forzar el tamaño */
+    border-radius: 15px; /* Mantenemos los bordes redondeados */
+    margin: 0 auto 15px; /* Centramos la imagen y le damos un espacio abajo */
 }
-.coffee-img{
-    position: absolute;
-    top: 0;
-    right: 0;
 
-}
 .coffee-1 h3 {
     font-size: 20px;
     color: #323337;
     margin-bottom: 15px;
 }
 
+.coffee-1 p {
+    font-size: 14px; /* Un tamaño de fuente ligeramente más pequeño para la descripción */
+    color: #414247;
+    margin: 0; /* Quitamos el margen por defecto del párrafo */
+    flex-grow: 1; /* Hacemos que el párrafo ocupe el espacio restante, alineando los botones de abajo */
+}
 .services {
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.7),

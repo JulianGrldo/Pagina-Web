@@ -145,23 +145,23 @@ POSITION: relative;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    /* AÑADE ESTA LÍNEA 👇 */
+
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* AÑADE ESTA NUEVA REGLA COMPLETA 👇 */
+
 .coffee-1:hover {
-    transform: translateY(-10px); /* Esto levanta la tarjeta 10px */
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Esto hace la sombra más pronunciada */
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
 }
 
-/* Ajustamos la imagen para que se adapte mejor */
+
 .coffee-1 img {
-    width: 150px; /* Reducimos el ancho de la imagen */
-    height: 150px; /* Fijamos una altura igual para que sea un cuadrado perfecto */
-    object-fit: cover; /* Esto evita que la imagen se deforme al forzar el tamaño */
-    border-radius: 15px; /* Mantenemos los bordes redondeados */
-    margin: 0 auto 15px; /* Centramos la imagen y le damos un espacio abajo */
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 15px; 
+    margin: 0 auto 15px; 
 }
 
 .coffee-1 h3 {

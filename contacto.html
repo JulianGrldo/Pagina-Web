@@ -1,73 +1,95 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contacto - Coffee House</title>
-  <link rel="stylesheet" href="styles/style.css"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - Coffee House</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
 </head>
 <body>
 
-  <header class="header">
-    <div class="menu container">
-      <a href="index.html" class="logo">Coffee House</a>
-      <input type="checkbox" id="menu" />
-      <label for="menu"><img src="images/menu.png" class="menu-icono" alt="Menú" /></label>
-      <nav class="navbar">
-         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="menu.html">Menú</a></li>
-          <li><a href="about.html">Nosotros</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="header-content container">
-      <h1>Contáctanos</h1>
-      <p>Estamos aquí para servirte. ¡Envíanos un mensaje o visítanos!</p>
-    </div>
-  </header>
+    <header class="header">
+        <div class="menu container">
+            <a href="index.html" class="logo">Coffee House</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu"><img src="images/menu.png" class="menu-icono" alt="Menú" /></label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="menu.html">Menú</a></li>
+                    <li><a href="about.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content container">
+            <h1>Contáctanos</h1>
+            <p>Estamos aquí para servirte. ¡Envíanos un mensaje o visítanos!</p>
+        </div>
+    </header>
 
-  <section class="coffee container">
-    <h2>Formulario de Contacto</h2>
-    <form id="contact-form" class="contact-form" action="URL_DE_TU_ENDPOINT" method="POST">
-      <div class="input-group">
-        <label for="name">Nombre</label>
-        <input type="text" id="name" name="name" required>
-      </div>
-      <div class="input-group">
-        <label for="email">Correo Electrónico</label>
-        <input type="email" id="email" name="email" required>
-      </div>
-      <div class="input-group">
-        <label for="message">Mensaje</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-      </div>
-      <button type="submit" class="btn-1">Enviar Mensaje</button>
-    </form>
-    <div id="form-message" style="margin-top: 20px;"></div>
+    <section class="container">
+        <div class="contact-container">
+            <div class="contact-form-section">
+                <h2>Formulario de Contacto</h2>
+                <form id="contact-form" class="contact-form" action="#" method="POST">
+                    <div class="input-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-1">Enviar Mensaje</button>
+                </form>
+                <div id="form-message" style="margin-top: 20px;"></div>
+            </div>
 
-    <div class="contact-info">
-        <h2>Nuestra Ubicación</h2>
-        <p>Calle Falsa 123, Springfield</p>
-        <p><strong>Teléfono:</strong> +123 456 7890</p>
-        <p><strong>Email:</strong> contacto@coffeehouse.com</p>
-    </div>
-  </section>
+            <div class="contact-details-section">
+                <h2>Información</h2>
+                <div class="contact-info-item">
+                    <img src="images/location-pin.png" alt="Ubicación">
+                    <p>Calle Falsa 123, Springfield</p>
+                </div>
+                <div class="contact-info-item">
+                    <img src="images/phone-call.png" alt="Teléfono">
+                    <p>+123 456 7890</p>
+                </div>
+                <div class="contact-info-item">
+                    <img src="images/email.png" alt="Email">
+                    <p>contacto@coffeehouse.com</p>
+                </div>
 
-  <footer class="footer">
-    <div class="footer-content container">
-      <div class="link">
-        <h3>Redes Sociales</h3>
-        <ul>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Twitter</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.6789012345!2d-74.005972!3d40.712776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDQyJzQ2LjAiTiA3NMKwMDAnMjEuNSJX!5e0!3m2!1ses!2sus!4v1625243431698!5m2!1ses!2sus" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <script src="script.js"></script>
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

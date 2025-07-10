@@ -1,12 +1,63 @@
+/* Estilos para la sección ¿Quiénes somos? */
+.about-section {
+    display: flex;
+    align-items: center;
+    padding: 80px 0;
+    gap: 50px;
+}
+
+.about-section .general-text {
+    flex: 1;
+}
+
+.about-section .general-img {
+    flex: 1;
+}
+
+.about-section .general-img img {
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+/* Estilos para la sección de filosofía */
+.philosophy-section {
+    padding: 80px 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.philosophy-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.philosophy-content .philosophy-item {
+    margin-bottom: 30px;
+}
+
+.philosophy-content .philosophy-item h3 {
+    font-size: 28px;
+    color: #323337;
+    margin-bottom: 15px;
+}
+
+.philosophy-content .philosophy-item .fas {
+    color: #ce967b;
+    margin-right: 10px;
+}
+
+/* Estilos para la sección del equipo */
 .team-section {
     padding: 80px 0;
     text-align: center;
-    background-color: #f8f8f8;
 }
 
 .team-section h2 {
     font-size: 55px;
-    line-height: 70px;
     color: #323337;
     text-transform: uppercase;
     margin-bottom: 50px;
@@ -27,7 +78,21 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0; /* Inicialmente invisible para la animación */
+    animation: fadeIn 1s forwards; /* Animación */
 }
+
+/* Animación para cada miembro del equipo con un retraso */
+.team-member:nth-child(1) {
+    animation-delay: 0.2s;
+}
+.team-member:nth-child(2) {
+    animation-delay: 0.4s;
+}
+.team-member:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
 
 .team-member:hover {
     transform: translateY(-10px);
@@ -53,13 +118,21 @@
     color: #414247;
 }
 
-.philosophy-section {
-    padding: 60px 0;
-    background-color: #E1E2E6;
+/* Definición de la animación de Fade-In */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.philosophy-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+    }
 }
